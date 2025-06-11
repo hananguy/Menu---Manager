@@ -6,13 +6,15 @@ using System.Threading.Tasks;
 
 namespace Ex04.Menus.Test
 {
-	public class Program
+	public class MenuRunner
 	{
 		static void Main()
 		{
-			MenuInteraceRun menuInterfaceRun = new MenuInteraceRun();
+			MenuInterfaceRun menuInterfaceRun = new MenuInterfaceRun();
 			MenuDelegatesRun menuDelegatesRun = new MenuDelegatesRun();
+			menuInterfaceRun.InterfaceMenuRun();
 			menuDelegatesRun.DelegateMenuRun();
+
 		}
 	}
 }

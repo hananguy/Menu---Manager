@@ -70,6 +70,7 @@ namespace Ex04.Menus.Interfaces
 				}
 
 				MenuItem selected = currentMenu.m_Items[choice - 1];
+
 				if (selected.SubItems != null && selected.SubItems.Count > 0)
 				{
 					currentMenu = new Menu(selected.Title, new List<MenuItem>(selected.SubItems), currentMenu);
